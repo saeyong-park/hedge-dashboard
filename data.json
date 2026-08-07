@@ -1,25 +1,13 @@
 {
- "generated_at": "2026-08-07T07:25:41.356289+00:00",
- "balance": 830.21,
- "last_price": 64264.3,
+ "generated_at": "2026-08-08T20:05:41.356565+00:00",
+ "balance": 828.86,
+ "last_price": 65010.1,
  "stats": {
-  "total_pnl": -169.79,
-  "trades_closed": 126,
-  "win_rate_30": 30.0
+  "total_pnl": -171.15,
+  "trades_closed": 129,
+  "win_rate_30": 33.3
  },
  "equity": [
-  {
-   "t": "2026-07-13T02:06",
-   "v": 942.92
-  },
-  {
-   "t": "2026-07-13T03:32",
-   "v": 927.08
-  },
-  {
-   "t": "2026-07-13T12:30",
-   "v": 935.52
-  },
   {
    "t": "2026-07-13T17:57",
    "v": 915.32
@@ -487,10 +475,67 @@
   {
    "t": "2026-08-06T23:59",
    "v": 830.21
+  },
+  {
+   "t": "2026-08-08T06:41",
+   "v": 828.21
+  },
+  {
+   "t": "2026-08-08T14:26",
+   "v": 830.72
+  },
+  {
+   "t": "2026-08-08T15:35",
+   "v": 828.85
   }
  ],
- "open_positions": [],
+ "open_positions": [
+  {
+   "side": "BUY",
+   "lane": "main",
+   "entry": 64938.2,
+   "stop_loss": 64236.867439999995,
+   "take_profit": 65990.19884,
+   "leverage": 19,
+   "size_usdt": 150.02,
+   "opened_at": "2026-08-07T20:15:53.967547+00:00",
+   "partial_filled": 0,
+   "di_gate": {
+    "aligned": true,
+    "adx": 21.76,
+    "plus_di": 24.78,
+    "minus_di": 17.7
+   },
+   "reason": {
+    "majority_view": "4 of 4 voted BUY",
+    "bull": "Despite the overbought conditions, the long-term fundamentals and supportive monetary policies remain strong. However, the risk of sudden market sentiment shifts must be acknowled…",
+    "bear": "",
+    "confidence": 69.4
+   }
+  }
+ ],
  "recent_closed": [
+  {
+   "side": "BUY",
+   "pnl": -1.87,
+   "pnl_pct": -1.87,
+   "closed_at": "2026-08-08T15:35:24.819682+00:00",
+   "lane": "scalp-15m"
+  },
+  {
+   "side": "BUY",
+   "pnl": 2.51,
+   "pnl_pct": 2.53,
+   "closed_at": "2026-08-08T14:26:24.815007+00:00",
+   "lane": "scalp-15m"
+  },
+  {
+   "side": "BUY",
+   "pnl": -2.0,
+   "pnl_pct": -2.0,
+   "closed_at": "2026-08-08T06:41:24.472841+00:00",
+   "lane": "scalp-15m"
+  },
   {
    "side": "SELL",
    "pnl": -3.37,
@@ -539,123 +584,101 @@
    "pnl_pct": -0.21,
    "closed_at": "2026-08-04T07:16:24.496349+00:00",
    "lane": "main"
-  },
-  {
-   "side": "BUY",
-   "pnl": -7.52,
-   "pnl_pct": -7.6,
-   "closed_at": "2026-08-04T05:22:47.952521+00:00",
-   "lane": "scalp-15m"
-  },
-  {
-   "side": "SELL",
-   "pnl": -5.69,
-   "pnl_pct": -5.71,
-   "closed_at": "2026-08-04T01:31:47.976658+00:00",
-   "lane": "scalp-15m"
-  },
-  {
-   "side": "BUY",
-   "pnl": -8.49,
-   "pnl_pct": -12.83,
-   "closed_at": "2026-08-03T21:59:17.431560+00:00",
-   "lane": "scalp-15m"
   }
  ],
  "recent_cycles": [
   {
    "mode": "deep",
    "decision": "BUY",
-   "action": "waiting",
-   "price": 64264.3,
-   "balance": 830.21,
-   "created_at": "2026-08-07T07:01:53.229411+00:00"
-  },
-  {
-   "mode": "deep",
-   "decision": "BUY",
-   "action": "waiting",
-   "price": 64335.5,
-   "balance": 830.21,
-   "created_at": "2026-08-07T06:31:01.003345+00:00"
-  },
-  {
-   "mode": "deep",
-   "decision": "BUY",
-   "action": "waiting",
-   "price": 64367.0,
-   "balance": 830.21,
-   "created_at": "2026-08-07T06:15:15.229808+00:00"
-  },
-  {
-   "mode": "deep",
-   "decision": "HOLD",
    "action": "hold",
-   "price": 64289.9,
-   "balance": 830.2132785750554,
-   "created_at": "2026-08-07T06:01:15.134934+00:00"
+   "price": 65010.1,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T19:40:44.598691+00:00"
   },
   {
    "mode": "deep",
    "decision": "BUY",
-   "action": "waiting",
-   "price": 64157.7,
-   "balance": 830.2132785750554,
-   "created_at": "2026-08-07T05:30:27.643491+00:00"
+   "action": "hold",
+   "price": 64995.3,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T19:09:53.648023+00:00"
   },
   {
    "mode": "deep",
    "decision": "BUY",
-   "action": "waiting",
-   "price": 64225.8,
-   "balance": 830.2132785750554,
-   "created_at": "2026-08-07T04:59:39.396901+00:00"
+   "action": "hold",
+   "price": 65015.4,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T18:54:05.469385+00:00"
   },
   {
    "mode": "deep",
    "decision": "BUY",
-   "action": "waiting",
-   "price": 64280.3,
-   "balance": 830.2132785750554,
-   "created_at": "2026-08-07T04:28:53.534286+00:00"
+   "action": "hold",
+   "price": 65024.6,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T18:38:16.453960+00:00"
   },
   {
    "mode": "deep",
    "decision": "BUY",
-   "action": "waiting",
-   "price": 64252.0,
-   "balance": 830.2132785750554,
-   "created_at": "2026-08-07T03:58:07.378810+00:00"
+   "action": "hold",
+   "price": 65014.0,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T18:22:31.402773+00:00"
   },
   {
    "mode": "deep",
    "decision": "BUY",
-   "action": "waiting",
-   "price": 64310.8,
-   "balance": 830.2132785750554,
-   "created_at": "2026-08-07T03:42:23.729496+00:00"
+   "action": "hold",
+   "price": 65086.6,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T18:06:40.051437+00:00"
   },
   {
    "mode": "deep",
    "decision": "BUY",
-   "action": "waiting",
-   "price": 64300.0,
-   "balance": 830.2132785750554,
-   "created_at": "2026-08-07T03:11:35.105964+00:00"
+   "action": "hold",
+   "price": 65096.1,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T17:50:52.481465+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "hold",
+   "price": 65072.4,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T17:20:01.293177+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "hold",
+   "price": 65031.8,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T16:49:13.194558+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "hold",
+   "price": 65014.7,
+   "balance": 828.8592817957054,
+   "created_at": "2026-08-08T16:33:20.235023+00:00"
   }
  ],
  "thesis": {
   "macro_bias": "bullish",
   "conviction": 70,
   "liquidity_regime": "expanding",
-  "narrative_read": "The narrative suggests a positive sentiment towards BTC, with large whale accumulation and institutional interest growing. However, regulatory uncertainty remains, as evidenced by the delay in the CLARITY Act vote.",
+  "narrative_read": "The narrative remains supportive of BTC, with positive regulatory news like the potential passage of the Crypto Clarity Act and increased institutional interest as seen in US spot Bitcoin ETF inflows. However, security concerns and regulatory actions in certain jurisdictions like Brazil add complexity.",
   "key_drivers": [
-   "Equities and gold continue to perform well, supporting a risk-on environment beneficial to BTC.",
-   "Falling yields indicate easier monetary conditions, providing a tailwind for BTC.",
-   "Growing institutional interest in cryptocurrencies, as seen in the expansion of crypto businesses and services.",
-   "Regulatory uncertainty, particularly with the CLARITY crypto bill, which could either boost or dampen investor confidence."
+   "Favorable monetary conditions with falling yields providing a tailwind for BTC.",
+   "Positive regulatory developments such as the Crypto Clarity Act vote and support for stablecoins.",
+   "Institutional money flowing into Bitcoin, as indicated by Bitwise's Matt Hougan."
   ],
-  "updated_at": "2026-08-07T07:01:13.687945+00:00"
+  "updated_at": "2026-08-08T19:40:06.122371+00:00"
  },
  "research": [
   {
@@ -709,107 +732,103 @@
  ],
  "thoughts": [
   {
-   "task": "explore",
-   "summary": "Q: What is the current trend and volatility on the 15-minute timeframe for Bitcoin? → The 15-minute timeframe for Bitcoin currently shows a sideways trend with a relatively low volatility, as indicat…",
-   "at": "2026-08-07T07:23:26.781734+00:00"
-  },
-  {
-   "task": "explore",
-   "summary": "duplicate question suppressed: What is the difference in trend and volatility between the 4-hour and daily time",
-   "at": "2026-08-07T07:20:27.142282+00:00"
-  },
-  {
    "task": "verify",
-   "summary": "#309 → open (conf 60) The hypothesis is partially supported by the data, but further investigation is needed to determine if there is an increase in institutional ownership of digital assets.",
-   "at": "2026-08-07T07:11:25.502483+00:00"
+   "summary": "#458 → open (conf 85) The hypothesis remains supported as the price is near the predicted target and has not fallen below the invalidation level.",
+   "at": "2026-08-08T20:05:28.523043+00:00"
   },
   {
    "task": "explore",
-   "summary": "Q: What is the current narrative around central bank digital currencies (CBDC) adop → The search did not return any specific headlines regarding CBDC adoption rates. Instead, it returned several unre…",
-   "at": "2026-08-07T07:08:25.278492+00:00"
+   "summary": "Q: How are central banks globally approaching digital currencies and related regula → Central banks are taking varied approaches; for instance, Brazil's central bank is focusing on regulating large c…",
+   "at": "2026-08-08T20:02:25.089799+00:00"
   },
   {
    "task": "verify",
-   "summary": "#369 → open (conf 50) The hypothesis that BTC price will continue its upward trend or reverse below the Fibonacci retracement level at 63450.77 remains open as the trend is currently sideways.",
-   "at": "2026-08-07T07:05:28.112898+00:00"
+   "summary": "#242 → open (conf 40) The initial prediction regarding Stripe's bid for PayPal could not be verified through recent news headlines.",
+   "at": "2026-08-08T19:59:25.514408+00:00"
   },
   {
-   "task": "verify",
-   "summary": "#378 → open (conf 40) The hypothesis remains partially supported by the data, but further observation is needed to confirm the reversal prediction.",
-   "at": "2026-08-07T07:02:29.221543+00:00"
+   "task": "explore",
+   "summary": "Q: Is there a correlation between the performance of Treasury Bonds (^TNX) and Gold → The 10-year Treasury Note (^TNX) decreased by 0.55% today, while Gold (GC=F) increased by 9.07%. Meanwhile, Bitco…",
+   "at": "2026-08-08T19:50:29.339232+00:00"
+  },
+  {
+   "task": "explore",
+   "summary": "Q: What is the current BTC perpetual funding rate and how does it compare to previo → The current BTC perpetual funding rate is 7.09e-05, which is slightly higher than the previously observed rate of…",
+   "at": "2026-08-08T19:47:26.631377+00:00"
+  },
+  {
+   "task": "explore",
+   "summary": "Q: What is the current trend and volatility of Bitcoin on the daily timeframe? → The daily trend of Bitcoin is currently showing an uptrend with a price of 65012 and an Average True Range (ATR) of 2.…",
+   "at": "2026-08-08T19:41:26.584588+00:00"
   }
  ],
  "hypotheses": [
   {
-   "title": "BTC Trendline Support [1d]",
+   "title": "US spot Bitcoin ETFs post best week since April with $1B inflows",
    "status": "open",
-   "confidence": 65.0,
-   "deadline": "2026-08-21T06:41:33.698415+00:00"
+   "confidence": 80.0,
+   "deadline": "2026-08-09T16:29:28.841661+00:00"
   },
   {
-   "title": "BTC Inverse Head-and-Shoulders [1h]",
+   "title": "Another Bitcoin infrastructure exploit hits, this time draining Lightning payment servers",
    "status": "open",
-   "confidence": 70.0,
-   "deadline": "2026-08-11T06:41:33.637859+00:00"
-  },
-  {
-   "title": "Proposed CLARITY ethics deal could save Trump millions in taxes: Bloomberg",
-   "status": "open",
-   "confidence": 60.0,
-   "deadline": "2026-08-09T05:13:44.711988+00:00"
+   "confidence": 50.0,
+   "deadline": "2026-08-09T09:02:28.493782+00:00"
   },
   {
    "title": "BTC 1h Inverse Head-and-Shoulders Pattern",
    "status": "open",
-   "confidence": 60.0,
-   "deadline": "2026-08-10T21:25:46.512588+00:00"
-  },
-  {
-   "title": "OpenAI Reveals How AI Agents Secretly Coordinated Before Hugging Face Hack",
-   "status": "open",
-   "confidence": 60.0,
-   "deadline": "2026-08-07T18:28:43.796699+00:00"
-  },
-  {
-   "title": "Bitcoin-backed loan refinances PowerCompute’s $18M debt at 2%",
-   "status": "open",
    "confidence": 50.0,
-   "deadline": "2026-08-07T08:49:45.138163+00:00"
+   "deadline": "2026-08-12T02:44:33.572881+00:00"
+  },
+  {
+   "title": "BTC 1h Inverse Head-and-Shoulders Pattern",
+   "status": "open",
+   "confidence": 70.0,
+   "deadline": "2026-08-11T21:53:33.763216+00:00"
+  },
+  {
+   "title": "Circle expands USDC to OKX ecosystem with X Layer launch",
+   "status": "open",
+   "confidence": 60.0,
+   "deadline": "2026-08-10T18:35:30.812530+00:00"
+  },
+  {
+   "title": "BTC Trendline Support [1d]",
+   "status": "open",
+   "confidence": 85.0,
+   "deadline": "2026-08-27T15:17:34.366618+00:00"
   }
  ],
  "lessons": [
   {
-   "lesson": "Ensure predictions account for potential volatility and fluctuation near support levels.",
+   "lesson": "Ensure the hypothesis includes a timeframe for the prediction to be considered accurate.",
    "pnl": 0.0,
-   "at": "2026-08-07T06:10:39.034628+00:00"
+   "at": "2026-08-08T16:38:23.944508+00:00"
   },
   {
-   "lesson": "Ensure predictions account for volatility and market shifts.",
-   "pnl": 0.0,
-   "at": "2026-08-07T05:43:38.952737+00:00"
+   "lesson": "Calibrated confidence should reflect uncertainty in the market; a 0% confidence level suggests the entry thesis was speculative without sufficient evidence.",
+   "pnl": -1.87,
+   "at": "2026-08-08T15:35:26.757997+00:00"
   },
   {
-   "lesson": "Ensure predictions align with observed market movements.",
-   "pnl": 0.0,
-   "at": "2026-08-07T05:16:38.943173+00:00"
+   "lesson": "Calibrated confidence was too low; re-evaluate the importance of personal conviction in trading decisions.",
+   "pnl": 2.51,
+   "at": "2026-08-08T14:26:26.524424+00:00"
   },
   {
-   "lesson": "Ensure that evidence directly supports the predicted indicators.",
+   "lesson": "Ensure predictions are based on thorough evidence rather than assumptions.",
    "pnl": 0.0,
-   "at": "2026-08-07T02:31:38.976712+00:00"
+   "at": "2026-08-08T09:11:23.831328+00:00"
   },
   {
-   "lesson": "Calibrated confidence should reflect uncertainty in entry thesis; low confidence signals high risk.",
-   "pnl": -3.37,
-   "at": "2026-08-06T23:59:41.265691+00:00"
+   "lesson": "Calibrated confidence was too low; re-evaluate the importance of market sentiment and adjust confidence levels accordingly.",
+   "pnl": -2.0,
+   "at": "2026-08-08T06:41:26.342772+00:00"
   }
  ],
  "guards": {
   "upcoming": [
-   {
-    "name": "NFP (Employment Situation, Jul)",
-    "utc": "2026-08-07T12:30:00+00:00"
-   },
    {
     "name": "CPI (Jul)",
     "utc": "2026-08-12T12:30:00+00:00"
@@ -817,109 +836,162 @@
    {
     "name": "NFP (Employment Situation, Aug)",
     "utc": "2026-09-04T12:30:00+00:00"
+   },
+   {
+    "name": "CPI (Aug)",
+    "utc": "2026-09-11T12:30:00+00:00"
    }
   ],
   "econ_blocks": [
    {
-    "ts": "2026-08-06T14:42:38.719489+00:00",
+    "ts": "2026-08-07T18:27:24.660079+00:00",
     "kind": "news_shock",
-    "reason": "뉴스 쇼크 감지: \"Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis\" — 14:42Z까지 신규 진입 일시정지"
+    "reason": "뉴스 쇼크 감지: \"Hackers Use BNB Chain to Spread Malware Through Fake CAPTCHAs\" — 19:57Z까지 신규 진입 일시정지"
    },
    {
-    "ts": "2026-08-06T13:12:38.730130+00:00",
+    "ts": "2026-08-07T18:11:35.731534+00:00",
     "kind": "news_shock",
-    "reason": "뉴스 쇼크 감지: \"Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis\" — 14:42Z까지 신규 진입 일시정지"
+    "reason": "뉴스 쇼크 감지: \"Hackers Use BNB Chain to Spread Malware Through Fake CAPTCHAs\" — 19:41Z까지 신규 진입 일시정지"
    },
    {
-    "ts": "2026-08-06T13:04:38.916085+00:00",
+    "ts": "2026-08-07T17:27:24.718153+00:00",
     "kind": "news_shock",
-    "reason": "뉴스 쇼크 감지: \"Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis\" — 14:34Z까지 신규 진입 일시정지"
+    "reason": "뉴스 쇼크 감지: \"Hackers Use BNB Chain to Spread Malware Through Fake CAPTCHAs\" — 18:57Z까지 신규 진입 일시정지"
    },
    {
-    "ts": "2026-08-05T12:27:23.960971+00:00",
+    "ts": "2026-08-07T17:12:24.804765+00:00",
     "kind": "news_shock",
-    "reason": "뉴스 쇼크 감지: \"The $120 million Coldcard hack lights up Bitcoin's memory pool\" — 13:57Z까지 신규 진입 일시정지"
+    "reason": "뉴스 쇼크 감지: \"Hackers Use BNB Chain to Spread Malware Through Fake CAPTCHAs\" — 18:42Z까지 신규 진입 일시정지"
    },
    {
-    "ts": "2026-08-04T14:42:23.335848+00:00",
-    "kind": "news_shock",
-    "reason": "뉴스 쇼크 감지: \"Apple's AI Slop Problem Left a $200K macOS Exploit Unreported\" — 16:12Z까지 신규 진입 일시정지"
+    "ts": "2026-08-07T13:47:20.165743+00:00",
+    "kind": "econ_blackout",
+    "reason": "NFP (Employment Situation, Jul) -1.3h (발표 08-07 12:30Z) — 신규 진입 차단"
    }
   ],
-  "di_recent": []
+  "di_recent": [
+   {
+    "ts": "2026-08-08T14:27:27.968685+00:00",
+    "side": "BUY",
+    "lane": "scalp-15m",
+    "price": 65107.4,
+    "mode": "observe",
+    "aligned": true,
+    "adx": 15.95,
+    "plus_di": 19.59,
+    "minus_di": 16.82
+   },
+   {
+    "ts": "2026-08-08T14:12:28.189533+00:00",
+    "side": "BUY",
+    "lane": "scalp-15m",
+    "price": 65020.2,
+    "mode": "observe",
+    "aligned": true,
+    "adx": 15.95,
+    "plus_di": 19.59,
+    "minus_di": 16.82
+   },
+   {
+    "ts": "2026-08-08T03:27:27.492230+00:00",
+    "side": "BUY",
+    "lane": "scalp-15m",
+    "price": 64996.9,
+    "mode": "observe",
+    "aligned": true,
+    "adx": 17.9,
+    "plus_di": 21.84,
+    "minus_di": 18.57
+   },
+   {
+    "ts": "2026-08-07T20:15:53.967324+00:00",
+    "side": "BUY",
+    "lane": null,
+    "price": 64938.2,
+    "mode": "observe",
+    "aligned": true,
+    "adx": 21.76,
+    "plus_di": 24.78,
+    "minus_di": 17.7
+   }
+  ],
+  "di_summary": {
+   "evaluated": 4,
+   "misaligned": 0
+  }
  },
  "news": [
   {
-   "title": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
+   "title": "Bitcoin hits block 961,632 as the controversial BIP-110 soft fork attempt begins",
    "source": "CoinDesk",
    "link": null,
-   "published": "2026-08-07T05:45:21+00:00"
+   "published": "2026-08-08T20:06:47+00:00"
   },
   {
-   "title": "Japan FSA asks crypto exchanges to impose withdrawal delays to fight scams",
-   "source": "Cointelegraph",
-   "link": null,
-   "published": "2026-08-07T05:24:38+00:00"
-  },
-  {
-   "title": "Proposed CLARITY ethics deal could save Trump millions in taxes: Bloomberg",
-   "source": "Cointelegraph",
-   "link": null,
-   "published": "2026-08-07T05:04:22+00:00"
-  },
-  {
-   "title": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
+   "title": "Hardware wallet sales in Russia more than double as new crypto rules near",
    "source": "CoinDesk",
    "link": null,
-   "published": "2026-08-07T04:50:44+00:00"
+   "published": "2026-08-08T17:48:02+00:00"
   },
   {
-   "title": "A bitcoin pattern taking shape right now could send prices soaring to $76,000",
-   "source": "CoinDesk",
-   "link": null,
-   "published": "2026-08-07T04:28:17+00:00"
-  },
-  {
-   "title": "XRP leads majors losses as Clarity Act vote slips to September",
-   "source": "CoinDesk",
-   "link": null,
-   "published": "2026-08-07T04:17:01+00:00"
-  },
-  {
-   "title": "Bitget explores licensed crypto presence in Bhutan",
-   "source": "Cointelegraph",
-   "link": null,
-   "published": "2026-08-07T03:22:26+00:00"
-  },
-  {
-   "title": "US Senate pushes CLARITY Act vote to September",
-   "source": "Cointelegraph",
-   "link": null,
-   "published": "2026-08-07T02:49:53+00:00"
-  },
-  {
-   "title": "MARA swings to Q2 loss as Bitcoin’s slump masks higher output",
-   "source": "Cointelegraph",
-   "link": null,
-   "published": "2026-08-07T02:17:07+00:00"
-  },
-  {
-   "title": "Senate won't vote on crypto Clarity Act before its summer break",
-   "source": "CoinDesk",
-   "link": null,
-   "published": "2026-08-07T02:14:43+00:00"
-  },
-  {
-   "title": "SEC Bought a Billion Airline Records to Track Travelers—Likely Without a Warrant",
+   "title": "Bitcoin Red Team Says AI Is Finding Critical Exploits Across Core Projects",
    "source": "Decrypt",
    "link": null,
-   "published": "2026-08-06T21:36:03+00:00"
+   "published": "2026-08-08T17:31:03+00:00"
   },
   {
-   "title": "Tokyo Tells Trump to Stop Meme-ing Mario",
+   "title": "Here’s what happened in crypto today",
+   "source": "Cointelegraph",
+   "link": null,
+   "published": "2026-08-08T17:19:56+00:00"
+  },
+  {
+   "title": "Senate Keeps Clarity Act Alive With Crypto Bill Vote Set for September",
    "source": "Decrypt",
    "link": null,
-   "published": "2026-08-06T21:01:03+00:00"
+   "published": "2026-08-08T16:33:02+00:00"
+  },
+  {
+   "title": "US spot Bitcoin ETFs post best week since April with $1B inflows",
+   "source": "Cointelegraph",
+   "link": null,
+   "published": "2026-08-08T16:20:17+00:00"
+  },
+  {
+   "title": "Brazil's central bank orders exchanges to delay large crypto transfers abroad",
+   "source": "CoinDesk",
+   "link": null,
+   "published": "2026-08-08T15:25:38+00:00"
+  },
+  {
+   "title": "US Senate to vote on advancing CLARITY Act in September after Thune files cloture",
+   "source": "Cointelegraph",
+   "link": null,
+   "published": "2026-08-08T15:08:06+00:00"
+  },
+  {
+   "title": "Robinhood Crypto Chief Explains Why There Are 'Two Wolves' Inside Robinhood Chain",
+   "source": "Decrypt",
+   "link": null,
+   "published": "2026-08-08T14:01:05+00:00"
+  },
+  {
+   "title": "Trillions in institutional money to flow into bitcoin, says Bitwise's Matt Hougan",
+   "source": "CoinDesk",
+   "link": null,
+   "published": "2026-08-08T14:00:00+00:00"
+  },
+  {
+   "title": "Bitcoin will never fall below $60K again: Nansen founder",
+   "source": "Cointelegraph",
+   "link": null,
+   "published": "2026-08-08T13:30:00+00:00"
+  },
+  {
+   "title": "Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF",
+   "source": "CoinDesk",
+   "link": null,
+   "published": "2026-08-08T13:00:00+00:00"
   }
  ]
 }
