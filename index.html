@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hedge Fund 현황판</title>
+<style>
+:root {
+  --bg: #f6f7f9; --card: #ffffff; --ink: #1b2430; --ink2: #5a6675;
+  --muted: #8a94a3; --line: #e3e7ee; --accent: #3b6fe0;
+  --good: #1a7f4e; --bad: #c73a42; --warn: #9a6700; --chipbg: #eef1f6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1219; --card: #171d28; --ink: #e8ecf2; --ink2: #a9b3c1;
+    --muted: #6d7888; --line: #262e3c; --accent: #6b9aff;
+    --good: #3fbf7f; --bad: #ef6f76; --warn: #d8a437; --chipbg: #212a38;
+  }
+}
+* { box-sizing: border-box; margin: 0; }
+body {
+  background: var(--bg); color: var(--ink);
+  font: 15px/1.55 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  padding: 12px; max-width: 760px; margin: 0 auto;
+}
+h1 { font-size: 17px; font-weight: 700; }
+h2 { font-size: 13px; font-weight: 600; color: var(--ink2);
+     text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; }
+.card { background: var(--card); border: 1px solid var(--line);
+        border-radius: 12px; padding: 14px; margin-top: 12px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+.tile { flex: 1 1 30%; min-width: 96px; background: var(--card);
+        border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.tile .k { font-size: 11px; color: var(--muted); }
+.tile .v { font-size: 19px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.chip { display: inline-block; padding: 1px 8px; border-radius: 999px;
+        font-size: 11px; font-weight: 600; background: var(--chipbg); color: var(--ink2); }
+.chip.buy  { color: var(--good); } .chip.sell { color: var(--bad); }
+.chip.warn { color: var(--warn); }
+.up   { color: var(--good); font-variant-numeric: tabular-nums; }
+.down { color: var(--bad);  font-variant-numeric: tabular-nums; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+td, th { padding: 5px 4px; border-top: 1px solid var(--line); text-align: left;
+         vertical-align: top; }
+th { border-top: 0; color: var(--muted); font-weight: 500; font-size: 11px; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.muted { color: var(--muted); font-size: 12px; }
+.sub { color: var(--ink2); font-size: 13px; }
+ul { padding-left: 0; list-style: none; }
+li { padding: 6px 0; border-top: 1px solid var(--line); }
+li:first-child { border-top: 0; }
+a { color: var(--accent); text-decoration: none; }
+#stale { display: none; background: #b3261e; color: #fff; border-radius: 10px;
+         padding: 8px 12px; margin-top: 10px; font-size: 13px; }
+#spark { width: 100%; height: 64px; display: block; margin-top: 6px; }
+header { display: flex; justify-content: space-between; align-items: baseline; }
+.overflow { overflow-x: auto; }
+footer { color: var(--muted); font-size: 11px; margin: 16px 0 24px; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🤖 AI Hedge Fund 현황판</h1>
+  <span class="muted" id="updated">로딩…</span>
+</header>
+<div id="stale"></div>
+
+<div class="row" style="margin-top:12px">
+  <div class="tile"><div class="k">BTC 가격</div><div class="v" id="price">—</div></div>
+  <div class="tile"><div class="k">잔고 (페이퍼)</div><div class="v" id="balance">—</div></div>
+  <div class="tile"><div class="k">누적 손익</div><div class="v" id="pnl">—</div></div>
+  <div class="tile"><div class="k">승률(최근30)</div><div class="v" id="wr">—</div></div>
+</div>
+
+<div class="card"><h2>에쿼티 곡선</h2><svg id="spark" preserveAspectRatio="none"></svg></div>
+<div class="card"><h2>현재 포지션</h2><div id="positions" class="sub">—</div></div>
+<div class="card"><h2>거시 논지 (L0 Macro)</h2><div id="thesis" class="sub">—</div></div>
+<div class="card"><h2>최근 사이클 판단</h2><div class="overflow"><table id="cycles"></table></div></div>
+<div class="card"><h2>가드 (블랙아웃 · DI 게이트)</h2><div id="guards" class="sub">—</div></div>
+<div class="card"><h2>Researcher (자율 리서치)</h2><ul id="research"></ul></div>
+<div class="card"><h2>Thinker 최근 사고</h2><ul id="thoughts"></ul></div>
+<div class="card"><h2>활성 가설</h2><ul id="hyps"></ul></div>
+<div class="card"><h2>최근 청산 거래</h2><div class="overflow"><table id="closed"></table></div></div>
+<div class="card"><h2>최근 교훈 (post-mortem)</h2><ul id="lessons"></ul></div>
+<div class="card"><h2>뉴스</h2><ul id="news"></ul></div>
+<footer id="foot"></footer>
+
+<script>
+const DATA_URL = "https://raw.githubusercontent.com/saeyong-park/hedge-dashboard/main/data.json";
+const $ = id => document.getElementById(id);
+const esc = s => (s ?? "").toString().replace(/[&<>"]/g,
+  c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const kst = iso => iso ? new Date(iso).toLocaleString("ko-KR",
+  {timeZone: "Asia/Seoul", month: "numeric", day: "numeric",
+   hour: "2-digit", minute: "2-digit", hour12: false}) : "—";
+const money = v => (v >= 0 ? "+$" : "−$") + Math.abs(v).toFixed(2);
+const pnlSpan = v => `<span class="${v >= 0 ? "up" : "down"}">${money(v)}</span>`;
+
+function spark(eq) {
+  const svg = $("spark");
+  if (!eq || eq.length < 2) return;
+  const w = 600, h = 64, pad = 3;
+  svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+  const vs = eq.map(p => p.v);
+  const mn = Math.min(...vs), mx = Math.max(...vs), rg = (mx - mn) || 1;
+  const pts = vs.map((v, i) =>
+    `${pad + i * (w - 2 * pad) / (vs.length - 1)},${h - pad - (v - mn) / rg * (h - 2 * pad)}`);
+  const last = eq[eq.length - 1], first = eq[0];
+  const col = last.v >= first.v ? "var(--good)" : "var(--bad)";
+  svg.innerHTML =
+    `<polyline points="${pts.join(" ")}" fill="none" stroke="${col}" stroke-width="2"
+       stroke-linejoin="round" stroke-linecap="round"/>` +
+    `<circle cx="${pts[pts.length-1].split(",")[0]}" cy="${pts[pts.length-1].split(",")[1]}"
+       r="3" fill="${col}"/>`;
+}
+
+function render(d) {
+  $("updated").textContent = "갱신 " + kst(d.generated_at);
+  const ageMin = (Date.now() - new Date(d.generated_at)) / 60000;
+  if (ageMin > 20) {
+    $("stale").style.display = "block";
+    $("stale").textContent = `⚠️ 데이터가 ${Math.round(ageMin)}분 전 것입니다 — 수집 파이프라인 점검 필요`;
+  } else { $("stale").style.display = "none"; }
+
+  $("price").textContent = d.last_price ? "$" + d.last_price.toLocaleString() : "—";
+  $("balance").textContent = "$" + (d.balance ?? 0).toLocaleString();
+  $("pnl").innerHTML = pnlSpan(d.stats.total_pnl ?? 0);
+  $("wr").textContent = d.stats.win_rate_30 != null ? d.stats.win_rate_30 + "%" : "—";
+  spark(d.equity);
+
+  // 포지션
+  if (!d.open_positions.length) {
+    $("positions").innerHTML = `<span class="muted">오픈 포지션 없음 (청산 ${d.stats.trades_closed}건 누적)</span>`;
+  } else {
+    $("positions").innerHTML = d.open_positions.map(p => {
+      const r = p.reason || {};
+      const di = p.di_gate ? ` · DI ${p.di_gate.aligned ? "일치" : "불일치"}` : "";
+      return `<div style="margin-bottom:10px">
+        <span class="chip ${p.side === "BUY" ? "buy" : "sell"}">${p.side === "BUY" ? "▲ LONG" : "▼ SHORT"}</span>
+        <span class="chip">${esc(p.lane)}</span>
+        <span class="chip">${p.leverage}x</span>${esc(di)}
+        <div style="margin-top:4px">진입 $${p.entry.toLocaleString()} ·
+          SL $${p.stop_loss.toLocaleString()} · TP $${p.take_profit.toLocaleString()}
+          · ${kst(p.opened_at)}</div>
+        ${r.majority_view ? `<div class="muted" style="margin-top:4px">사유: ${esc(r.majority_view)}
+          ${r.confidence != null ? ` (확신도 ${r.confidence})` : ""}</div>` : ""}
+      </div>`;
+    }).join("");
+  }
+
+  // 논지
+  const t = d.thesis || {};
+  $("thesis").innerHTML = t.macro_bias ? `
+    <span class="chip ${t.macro_bias === "bullish" ? "buy" : t.macro_bias === "bearish" ? "sell" : ""}">
+      ${esc(t.macro_bias)} · 확신 ${t.conviction ?? "—"}</span>
+    <span class="chip">유동성 ${esc(t.liquidity_regime ?? "—")}</span>
+    <div style="margin-top:6px">${esc(t.narrative_read)}</div>
+    ${(t.key_drivers || []).map(k => `<div class="muted" style="margin-top:4px">• ${esc(k)}</div>`).join("")}
+    <div class="muted" style="margin-top:6px">논지 갱신 ${kst(t.updated_at)}</div>`
+    : `<span class="muted">논지 없음</span>`;
+
+  // 사이클
+  $("cycles").innerHTML =
+    `<tr><th>시각(KST)</th><th>모드</th><th>판단</th><th>행동</th><th class="num">가격</th></tr>` +
+    d.recent_cycles.map(c => `<tr>
+      <td>${kst(c.created_at)}</td><td>${esc(c.mode ?? "")}</td>
+      <td><span class="chip ${c.decision === "BUY" ? "buy" : c.decision === "SELL" ? "sell" : ""}">${esc(c.decision ?? "—")}</span></td>
+      <td>${esc(c.action ?? "")}</td>
+      <td class="num">${c.price ? "$" + c.price.toLocaleString() : ""}</td></tr>`).join("");
+
+  // 가드
+  const g = d.guards || {};
+  let gh = (g.upcoming || []).map(u =>
+    `<div>📅 ${esc(u.name)} — ${kst(u.utc)}</div>`).join("");
+  if (g.di_summary) gh += `<div style="margin-top:4px">DI 게이트(관찰): 최근 ${g.di_summary.evaluated}건 평가,
+    불일치 ${g.di_summary.misaligned}건</div>`;
+  gh += (g.econ_blocks || []).map(b =>
+    `<div class="muted" style="margin-top:4px">🚫 ${kst(b.ts)} [${esc(b.kind)}] ${esc(b.reason)}</div>`).join("");
+  $("guards").innerHTML = gh || `<span class="muted">기록 없음</span>`;
+
+  // Researcher
+  $("research").innerHTML = d.research.map(r => `<li>
+    <span class="chip ${r.status === "live_candidate" ? "buy" : r.status?.includes("failed") ? "sell" : ""}">${esc(r.status)}</span>
+    <b>${esc(r.name)}</b>
+    <div class="muted">${esc(r.hypothesis)}</div></li>`).join("")
+    || `<li class="muted">기록 없음</li>`;
+
+  // Thinker / 가설 / 교훈
+  $("thoughts").innerHTML = d.thoughts.map(x => `<li>
+    <span class="chip">${esc(x.task)}</span> <span class="muted">${kst(x.at)}</span>
+    <div class="sub">${esc(x.summary)}</div></li>`).join("");
+  $("hyps").innerHTML = d.hypotheses.map(h => `<li>
+    <span class="chip ${h.status === "supported" ? "buy" : ""}">${esc(h.status)}</span>
+    ${esc(h.title)} <span class="muted">(확신 ${h.confidence ?? "—"} · 마감 ${kst(h.deadline)})</span></li>`).join("")
+    || `<li class="muted">없음</li>`;
+  $("lessons").innerHTML = d.lessons.map(l => `<li>
+    ${pnlSpan(l.pnl ?? 0)} <span class="muted">${kst(l.at)}</span>
+    <div class="sub">${esc(l.lesson)}</div></li>`).join("");
+
+  // 청산 거래
+  $("closed").innerHTML =
+    `<tr><th>청산(KST)</th><th>방향</th><th>레인</th><th class="num">손익</th></tr>` +
+    d.recent_closed.map(t2 => `<tr>
+      <td>${kst(t2.closed_at)}</td>
+      <td><span class="chip ${t2.side === "BUY" ? "buy" : "sell"}">${t2.side === "BUY" ? "LONG" : "SHORT"}</span></td>
+      <td>${esc(t2.lane)}</td><td class="num">${pnlSpan(t2.pnl)}</td></tr>`).join("");
+
+  // 뉴스
+  $("news").innerHTML = d.news.map(n => `<li>
+    ${n.link ? `<a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a>` : esc(n.title)}
+    <div class="muted">${esc(n.source ?? "")} · ${kst(n.published)}</div></li>`).join("")
+    || `<li class="muted">뉴스 없음</li>`;
+
+  $("foot").textContent = "페이퍼 트레이딩 · 5분 주기 갱신 · 60초마다 자동 새로고침";
+}
+
+async function load() {
+  try {
+    const res = await fetch(DATA_URL + "?t=" + Date.now(), {cache: "no-store"});
+    if (!res.ok) throw new Error(res.status);
+    render(await res.json());
+  } catch (e) {
+    $("stale").style.display = "block";
+    $("stale").textContent = "⚠️ 데이터 로드 실패: " + e;
+  }
+}
+load();
+setInterval(load, 60_000);
+</script>
+</body>
+</html>
