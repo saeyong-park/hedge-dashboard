@@ -1,0 +1,925 @@
+{
+ "generated_at": "2026-08-07T07:25:41.356289+00:00",
+ "balance": 830.21,
+ "last_price": 64264.3,
+ "stats": {
+  "total_pnl": -169.79,
+  "trades_closed": 126,
+  "win_rate_30": 30.0
+ },
+ "equity": [
+  {
+   "t": "2026-07-13T02:06",
+   "v": 942.92
+  },
+  {
+   "t": "2026-07-13T03:32",
+   "v": 927.08
+  },
+  {
+   "t": "2026-07-13T12:30",
+   "v": 935.52
+  },
+  {
+   "t": "2026-07-13T17:57",
+   "v": 915.32
+  },
+  {
+   "t": "2026-07-14T12:29",
+   "v": 937.3
+  },
+  {
+   "t": "2026-07-14T15:31",
+   "v": 959.51
+  },
+  {
+   "t": "2026-07-15T12:54",
+   "v": 968.22
+  },
+  {
+   "t": "2026-07-15T16:33",
+   "v": 973.47
+  },
+  {
+   "t": "2026-07-16T07:37",
+   "v": 953.2
+  },
+  {
+   "t": "2026-07-16T22:54",
+   "v": 937.39
+  },
+  {
+   "t": "2026-07-17T05:28",
+   "v": 918.25
+  },
+  {
+   "t": "2026-07-17T12:37",
+   "v": 911.43
+  },
+  {
+   "t": "2026-07-17T13:50",
+   "v": 902.72
+  },
+  {
+   "t": "2026-07-17T14:30",
+   "v": 893.53
+  },
+  {
+   "t": "2026-07-17T22:33",
+   "v": 897.34
+  },
+  {
+   "t": "2026-07-18T17:39",
+   "v": 922.96
+  },
+  {
+   "t": "2026-07-18T18:17",
+   "v": 928.24
+  },
+  {
+   "t": "2026-07-18T21:42",
+   "v": 922.59
+  },
+  {
+   "t": "2026-07-19T05:12",
+   "v": 918.41
+  },
+  {
+   "t": "2026-07-19T10:10",
+   "v": 919.75
+  },
+  {
+   "t": "2026-07-19T12:49",
+   "v": 922.11
+  },
+  {
+   "t": "2026-07-19T17:49",
+   "v": 915.84
+  },
+  {
+   "t": "2026-07-20T00:32",
+   "v": 907.08
+  },
+  {
+   "t": "2026-07-20T06:31",
+   "v": 883.16
+  },
+  {
+   "t": "2026-07-20T07:24",
+   "v": 889.69
+  },
+  {
+   "t": "2026-07-20T12:42",
+   "v": 880.82
+  },
+  {
+   "t": "2026-07-20T18:42",
+   "v": 885.6
+  },
+  {
+   "t": "2026-07-21T01:48",
+   "v": 879.18
+  },
+  {
+   "t": "2026-07-21T10:08",
+   "v": 889.2
+  },
+  {
+   "t": "2026-07-21T13:21",
+   "v": 892.69
+  },
+  {
+   "t": "2026-07-21T13:57",
+   "v": 914.64
+  },
+  {
+   "t": "2026-07-21T16:44",
+   "v": 905.63
+  },
+  {
+   "t": "2026-07-21T19:36",
+   "v": 896.88
+  },
+  {
+   "t": "2026-07-22T01:00",
+   "v": 899.74
+  },
+  {
+   "t": "2026-07-22T06:20",
+   "v": 908.76
+  },
+  {
+   "t": "2026-07-22T08:06",
+   "v": 901.69
+  },
+  {
+   "t": "2026-07-22T13:34",
+   "v": 895.33
+  },
+  {
+   "t": "2026-07-22T18:20",
+   "v": 885.88
+  },
+  {
+   "t": "2026-07-23T01:15",
+   "v": 877.46
+  },
+  {
+   "t": "2026-07-23T06:44",
+   "v": 880.75
+  },
+  {
+   "t": "2026-07-23T08:28",
+   "v": 874.91
+  },
+  {
+   "t": "2026-07-23T12:31",
+   "v": 852.13
+  },
+  {
+   "t": "2026-07-23T13:52",
+   "v": 854.43
+  },
+  {
+   "t": "2026-07-23T14:20",
+   "v": 845.64
+  },
+  {
+   "t": "2026-07-23T20:14",
+   "v": 837.01
+  },
+  {
+   "t": "2026-07-24T00:25",
+   "v": 830.23
+  },
+  {
+   "t": "2026-07-24T07:14",
+   "v": 839.7
+  },
+  {
+   "t": "2026-07-24T07:25",
+   "v": 834.39
+  },
+  {
+   "t": "2026-07-24T13:03",
+   "v": 845.21
+  },
+  {
+   "t": "2026-07-24T13:38",
+   "v": 852.75
+  },
+  {
+   "t": "2026-07-25T01:26",
+   "v": 854.01
+  },
+  {
+   "t": "2026-07-25T04:39",
+   "v": 851.23
+  },
+  {
+   "t": "2026-07-25T05:33",
+   "v": 847.68
+  },
+  {
+   "t": "2026-07-25T13:42",
+   "v": 851.41
+  },
+  {
+   "t": "2026-07-25T13:54",
+   "v": 848.58
+  },
+  {
+   "t": "2026-07-25T20:06",
+   "v": 851.37
+  },
+  {
+   "t": "2026-07-26T01:56",
+   "v": 852.51
+  },
+  {
+   "t": "2026-07-26T05:29",
+   "v": 849.03
+  },
+  {
+   "t": "2026-07-26T06:53",
+   "v": 845.66
+  },
+  {
+   "t": "2026-07-26T12:43",
+   "v": 843.2
+  },
+  {
+   "t": "2026-07-26T16:30",
+   "v": 851.0
+  },
+  {
+   "t": "2026-07-26T21:18",
+   "v": 848.16
+  },
+  {
+   "t": "2026-07-26T22:35",
+   "v": 855.34
+  },
+  {
+   "t": "2026-07-27T00:03",
+   "v": 849.97
+  },
+  {
+   "t": "2026-07-27T09:35",
+   "v": 843.95
+  },
+  {
+   "t": "2026-07-27T13:33",
+   "v": 837.07
+  },
+  {
+   "t": "2026-07-27T13:54",
+   "v": 827.3
+  },
+  {
+   "t": "2026-07-27T14:28",
+   "v": 808.06
+  },
+  {
+   "t": "2026-07-27T17:18",
+   "v": 799.22
+  },
+  {
+   "t": "2026-07-27T22:38",
+   "v": 774.6
+  },
+  {
+   "t": "2026-07-27T22:38",
+   "v": 789.6
+  },
+  {
+   "t": "2026-07-27T22:55",
+   "v": 801.31
+  },
+  {
+   "t": "2026-07-28T00:57",
+   "v": 811.85
+  },
+  {
+   "t": "2026-07-28T13:43",
+   "v": 825.95
+  },
+  {
+   "t": "2026-07-28T13:45",
+   "v": 807.19
+  },
+  {
+   "t": "2026-07-28T13:54",
+   "v": 798.71
+  },
+  {
+   "t": "2026-07-29T06:26",
+   "v": 812.17
+  },
+  {
+   "t": "2026-07-29T13:18",
+   "v": 804.5
+  },
+  {
+   "t": "2026-07-29T17:58",
+   "v": 795.33
+  },
+  {
+   "t": "2026-07-29T22:15",
+   "v": 787.38
+  },
+  {
+   "t": "2026-07-30T04:41",
+   "v": 779.52
+  },
+  {
+   "t": "2026-07-30T11:48",
+   "v": 792.63
+  },
+  {
+   "t": "2026-07-30T13:46",
+   "v": 801.01
+  },
+  {
+   "t": "2026-07-30T23:42",
+   "v": 795.47
+  },
+  {
+   "t": "2026-07-31T01:35",
+   "v": 787.4
+  },
+  {
+   "t": "2026-07-31T07:21",
+   "v": 800.84
+  },
+  {
+   "t": "2026-07-31T09:19",
+   "v": 809.66
+  },
+  {
+   "t": "2026-07-31T10:39",
+   "v": 803.64
+  },
+  {
+   "t": "2026-07-31T13:59",
+   "v": 812.54
+  },
+  {
+   "t": "2026-07-31T14:04",
+   "v": 826.85
+  },
+  {
+   "t": "2026-07-31T17:17",
+   "v": 818.58
+  },
+  {
+   "t": "2026-08-01T15:58",
+   "v": 815.44
+  },
+  {
+   "t": "2026-08-01T16:01",
+   "v": 813.94
+  },
+  {
+   "t": "2026-08-01T16:34",
+   "v": 812.05
+  },
+  {
+   "t": "2026-08-01T17:59",
+   "v": 817.36
+  },
+  {
+   "t": "2026-08-01T18:28",
+   "v": 828.75
+  },
+  {
+   "t": "2026-08-01T18:52",
+   "v": 824.04
+  },
+  {
+   "t": "2026-08-01T20:58",
+   "v": 817.75
+  },
+  {
+   "t": "2026-08-02T00:52",
+   "v": 814.25
+  },
+  {
+   "t": "2026-08-02T02:04",
+   "v": 821.42
+  },
+  {
+   "t": "2026-08-02T08:36",
+   "v": 815.54
+  },
+  {
+   "t": "2026-08-02T09:31",
+   "v": 812.73
+  },
+  {
+   "t": "2026-08-02T12:20",
+   "v": 807.98
+  },
+  {
+   "t": "2026-08-02T18:39",
+   "v": 816.89
+  },
+  {
+   "t": "2026-08-02T18:58",
+   "v": 812.74
+  },
+  {
+   "t": "2026-08-02T22:30",
+   "v": 807.51
+  },
+  {
+   "t": "2026-08-03T04:55",
+   "v": 821.53
+  },
+  {
+   "t": "2026-08-03T08:27",
+   "v": 831.34
+  },
+  {
+   "t": "2026-08-03T08:57",
+   "v": 825.69
+  },
+  {
+   "t": "2026-08-03T14:52",
+   "v": 839.74
+  },
+  {
+   "t": "2026-08-03T21:59",
+   "v": 831.25
+  },
+  {
+   "t": "2026-08-04T01:31",
+   "v": 825.56
+  },
+  {
+   "t": "2026-08-04T05:22",
+   "v": 818.04
+  },
+  {
+   "t": "2026-08-04T07:16",
+   "v": 831.68
+  },
+  {
+   "t": "2026-08-04T10:43",
+   "v": 826.14
+  },
+  {
+   "t": "2026-08-04T20:14",
+   "v": 815.0
+  },
+  {
+   "t": "2026-08-05T07:57",
+   "v": 809.72
+  },
+  {
+   "t": "2026-08-05T12:24",
+   "v": 842.25
+  },
+  {
+   "t": "2026-08-06T13:04",
+   "v": 833.58
+  },
+  {
+   "t": "2026-08-06T23:59",
+   "v": 830.21
+  }
+ ],
+ "open_positions": [],
+ "recent_closed": [
+  {
+   "side": "SELL",
+   "pnl": -3.37,
+   "pnl_pct": -3.36,
+   "closed_at": "2026-08-06T23:59:39.594551+00:00",
+   "lane": "scalp-15m"
+  },
+  {
+   "side": "BUY",
+   "pnl": -8.67,
+   "pnl_pct": -11.24,
+   "closed_at": "2026-08-06T13:04:38.756445+00:00",
+   "lane": "scalp-15m"
+  },
+  {
+   "side": "BUY",
+   "pnl": 32.53,
+   "pnl_pct": 29.06,
+   "closed_at": "2026-08-05T12:24:23.924830+00:00",
+   "lane": "main"
+  },
+  {
+   "side": "SELL",
+   "pnl": -5.28,
+   "pnl_pct": -5.33,
+   "closed_at": "2026-08-05T07:57:23.225161+00:00",
+   "lane": "scalp-15m"
+  },
+  {
+   "side": "BUY",
+   "pnl": -11.14,
+   "pnl_pct": -11.23,
+   "closed_at": "2026-08-04T20:14:23.462829+00:00",
+   "lane": "scalp-15m"
+  },
+  {
+   "side": "SELL",
+   "pnl": -5.54,
+   "pnl_pct": -5.55,
+   "closed_at": "2026-08-04T10:43:24.442265+00:00",
+   "lane": "scalp-15m"
+  },
+  {
+   "side": "BUY",
+   "pnl": 13.64,
+   "pnl_pct": -0.21,
+   "closed_at": "2026-08-04T07:16:24.496349+00:00",
+   "lane": "main"
+  },
+  {
+   "side": "BUY",
+   "pnl": -7.52,
+   "pnl_pct": -7.6,
+   "closed_at": "2026-08-04T05:22:47.952521+00:00",
+   "lane": "scalp-15m"
+  },
+  {
+   "side": "SELL",
+   "pnl": -5.69,
+   "pnl_pct": -5.71,
+   "closed_at": "2026-08-04T01:31:47.976658+00:00",
+   "lane": "scalp-15m"
+  },
+  {
+   "side": "BUY",
+   "pnl": -8.49,
+   "pnl_pct": -12.83,
+   "closed_at": "2026-08-03T21:59:17.431560+00:00",
+   "lane": "scalp-15m"
+  }
+ ],
+ "recent_cycles": [
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "waiting",
+   "price": 64264.3,
+   "balance": 830.21,
+   "created_at": "2026-08-07T07:01:53.229411+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "waiting",
+   "price": 64335.5,
+   "balance": 830.21,
+   "created_at": "2026-08-07T06:31:01.003345+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "waiting",
+   "price": 64367.0,
+   "balance": 830.21,
+   "created_at": "2026-08-07T06:15:15.229808+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "HOLD",
+   "action": "hold",
+   "price": 64289.9,
+   "balance": 830.2132785750554,
+   "created_at": "2026-08-07T06:01:15.134934+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "waiting",
+   "price": 64157.7,
+   "balance": 830.2132785750554,
+   "created_at": "2026-08-07T05:30:27.643491+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "waiting",
+   "price": 64225.8,
+   "balance": 830.2132785750554,
+   "created_at": "2026-08-07T04:59:39.396901+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "waiting",
+   "price": 64280.3,
+   "balance": 830.2132785750554,
+   "created_at": "2026-08-07T04:28:53.534286+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "waiting",
+   "price": 64252.0,
+   "balance": 830.2132785750554,
+   "created_at": "2026-08-07T03:58:07.378810+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "waiting",
+   "price": 64310.8,
+   "balance": 830.2132785750554,
+   "created_at": "2026-08-07T03:42:23.729496+00:00"
+  },
+  {
+   "mode": "deep",
+   "decision": "BUY",
+   "action": "waiting",
+   "price": 64300.0,
+   "balance": 830.2132785750554,
+   "created_at": "2026-08-07T03:11:35.105964+00:00"
+  }
+ ],
+ "thesis": {
+  "macro_bias": "bullish",
+  "conviction": 70,
+  "liquidity_regime": "expanding",
+  "narrative_read": "The narrative suggests a positive sentiment towards BTC, with large whale accumulation and institutional interest growing. However, regulatory uncertainty remains, as evidenced by the delay in the CLARITY Act vote.",
+  "key_drivers": [
+   "Equities and gold continue to perform well, supporting a risk-on environment beneficial to BTC.",
+   "Falling yields indicate easier monetary conditions, providing a tailwind for BTC.",
+   "Growing institutional interest in cryptocurrencies, as seen in the expansion of crypto businesses and services.",
+   "Regulatory uncertainty, particularly with the CLARITY crypto bill, which could either boost or dampen investor confidence."
+  ],
+  "updated_at": "2026-08-07T07:01:13.687945+00:00"
+ },
+ "research": [
+  {
+   "name": "Price Distance from SMA50 Rebound",
+   "status": "proposed",
+   "hypothesis": "If the price falls significantly below the 50-bar simple moving average (SMA50), it might indicate an oversold condition. A rebound from this level could signi…",
+   "updated_at": "2026-07-31T13:12:25.850951+00:00"
+  },
+  {
+   "name": "Volume Ratio Spike and Oversold Condition",
+   "status": "proposed",
+   "hypothesis": "A spike in volume ratio combined with an oversold condition can indicate a potential buying opportunity. When the market is oversold, it often means that there…",
+   "updated_at": "2026-07-31T13:12:25.825110+00:00"
+  },
+  {
+   "name": "RSI 14-bar Oversold with High Efficiency",
+   "status": "proposed",
+   "hypothesis": "When the market is oversold according to the RSI 14-bar indicator and simultaneously shows high efficiency (trendiness) based on the Kaufman efficiency ratio, …",
+   "updated_at": "2026-07-31T13:12:25.788333+00:00"
+  },
+  {
+   "name": "Volume Ratio Spike and Oversold Condition",
+   "status": "shadow",
+   "hypothesis": "This strategy leverages the combination of a significant increase in trading volume and an oversold condition indicated by the RSI 7-bar oscillator. The ration…",
+   "updated_at": "2026-07-31T07:12:18.236082+00:00"
+  },
+  {
+   "name": "RSI 14-bar Oversold Convergence",
+   "status": "retro_failed",
+   "hypothesis": "The hypothesis for this strategy is that when the RSI 14-bar indicator falls into an oversold condition and then converges towards the midpoint of the scale, i…",
+   "updated_at": "2026-07-31T01:12:18.577703+00:00"
+  },
+  {
+   "name": "Price Distance from SMA50 Rebound",
+   "status": "retro_failed",
+   "hypothesis": "When the price moves significantly away from its 50-bar Simple Moving Average (SMA), it often indicates an overreaction in the market. This strategy takes adva…",
+   "updated_at": "2026-07-31T01:12:18.312154+00:00"
+  },
+  {
+   "name": "CCI Oversold Rebound with Positive Volatility",
+   "status": "proposed",
+   "hypothesis": "When the Commodity Channel Index reaches oversold levels and there is an increase in volatility, it suggests that the market is preparing for a reversal, leadi…",
+   "updated_at": "2026-07-30T19:12:26.745124+00:00"
+  },
+  {
+   "name": "Volume Price Correlation Breakout",
+   "status": "proposed",
+   "hypothesis": "High positive correlation between volume and price indicates strong buying pressure, which can lead to a breakout in the direction of the trend.",
+   "updated_at": "2026-07-30T19:12:26.726861+00:00"
+  }
+ ],
+ "thoughts": [
+  {
+   "task": "explore",
+   "summary": "Q: What is the current trend and volatility on the 15-minute timeframe for Bitcoin? → The 15-minute timeframe for Bitcoin currently shows a sideways trend with a relatively low volatility, as indicat…",
+   "at": "2026-08-07T07:23:26.781734+00:00"
+  },
+  {
+   "task": "explore",
+   "summary": "duplicate question suppressed: What is the difference in trend and volatility between the 4-hour and daily time",
+   "at": "2026-08-07T07:20:27.142282+00:00"
+  },
+  {
+   "task": "verify",
+   "summary": "#309 → open (conf 60) The hypothesis is partially supported by the data, but further investigation is needed to determine if there is an increase in institutional ownership of digital assets.",
+   "at": "2026-08-07T07:11:25.502483+00:00"
+  },
+  {
+   "task": "explore",
+   "summary": "Q: What is the current narrative around central bank digital currencies (CBDC) adop → The search did not return any specific headlines regarding CBDC adoption rates. Instead, it returned several unre…",
+   "at": "2026-08-07T07:08:25.278492+00:00"
+  },
+  {
+   "task": "verify",
+   "summary": "#369 → open (conf 50) The hypothesis that BTC price will continue its upward trend or reverse below the Fibonacci retracement level at 63450.77 remains open as the trend is currently sideways.",
+   "at": "2026-08-07T07:05:28.112898+00:00"
+  },
+  {
+   "task": "verify",
+   "summary": "#378 → open (conf 40) The hypothesis remains partially supported by the data, but further observation is needed to confirm the reversal prediction.",
+   "at": "2026-08-07T07:02:29.221543+00:00"
+  }
+ ],
+ "hypotheses": [
+  {
+   "title": "BTC Trendline Support [1d]",
+   "status": "open",
+   "confidence": 65.0,
+   "deadline": "2026-08-21T06:41:33.698415+00:00"
+  },
+  {
+   "title": "BTC Inverse Head-and-Shoulders [1h]",
+   "status": "open",
+   "confidence": 70.0,
+   "deadline": "2026-08-11T06:41:33.637859+00:00"
+  },
+  {
+   "title": "Proposed CLARITY ethics deal could save Trump millions in taxes: Bloomberg",
+   "status": "open",
+   "confidence": 60.0,
+   "deadline": "2026-08-09T05:13:44.711988+00:00"
+  },
+  {
+   "title": "BTC 1h Inverse Head-and-Shoulders Pattern",
+   "status": "open",
+   "confidence": 60.0,
+   "deadline": "2026-08-10T21:25:46.512588+00:00"
+  },
+  {
+   "title": "OpenAI Reveals How AI Agents Secretly Coordinated Before Hugging Face Hack",
+   "status": "open",
+   "confidence": 60.0,
+   "deadline": "2026-08-07T18:28:43.796699+00:00"
+  },
+  {
+   "title": "Bitcoin-backed loan refinances PowerCompute’s $18M debt at 2%",
+   "status": "open",
+   "confidence": 50.0,
+   "deadline": "2026-08-07T08:49:45.138163+00:00"
+  }
+ ],
+ "lessons": [
+  {
+   "lesson": "Ensure predictions account for potential volatility and fluctuation near support levels.",
+   "pnl": 0.0,
+   "at": "2026-08-07T06:10:39.034628+00:00"
+  },
+  {
+   "lesson": "Ensure predictions account for volatility and market shifts.",
+   "pnl": 0.0,
+   "at": "2026-08-07T05:43:38.952737+00:00"
+  },
+  {
+   "lesson": "Ensure predictions align with observed market movements.",
+   "pnl": 0.0,
+   "at": "2026-08-07T05:16:38.943173+00:00"
+  },
+  {
+   "lesson": "Ensure that evidence directly supports the predicted indicators.",
+   "pnl": 0.0,
+   "at": "2026-08-07T02:31:38.976712+00:00"
+  },
+  {
+   "lesson": "Calibrated confidence should reflect uncertainty in entry thesis; low confidence signals high risk.",
+   "pnl": -3.37,
+   "at": "2026-08-06T23:59:41.265691+00:00"
+  }
+ ],
+ "guards": {
+  "upcoming": [
+   {
+    "name": "NFP (Employment Situation, Jul)",
+    "utc": "2026-08-07T12:30:00+00:00"
+   },
+   {
+    "name": "CPI (Jul)",
+    "utc": "2026-08-12T12:30:00+00:00"
+   },
+   {
+    "name": "NFP (Employment Situation, Aug)",
+    "utc": "2026-09-04T12:30:00+00:00"
+   }
+  ],
+  "econ_blocks": [
+   {
+    "ts": "2026-08-06T14:42:38.719489+00:00",
+    "kind": "news_shock",
+    "reason": "뉴스 쇼크 감지: \"Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis\" — 14:42Z까지 신규 진입 일시정지"
+   },
+   {
+    "ts": "2026-08-06T13:12:38.730130+00:00",
+    "kind": "news_shock",
+    "reason": "뉴스 쇼크 감지: \"Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis\" — 14:42Z까지 신규 진입 일시정지"
+   },
+   {
+    "ts": "2026-08-06T13:04:38.916085+00:00",
+    "kind": "news_shock",
+    "reason": "뉴스 쇼크 감지: \"Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis\" — 14:34Z까지 신규 진입 일시정지"
+   },
+   {
+    "ts": "2026-08-05T12:27:23.960971+00:00",
+    "kind": "news_shock",
+    "reason": "뉴스 쇼크 감지: \"The $120 million Coldcard hack lights up Bitcoin's memory pool\" — 13:57Z까지 신규 진입 일시정지"
+   },
+   {
+    "ts": "2026-08-04T14:42:23.335848+00:00",
+    "kind": "news_shock",
+    "reason": "뉴스 쇼크 감지: \"Apple's AI Slop Problem Left a $200K macOS Exploit Unreported\" — 16:12Z까지 신규 진입 일시정지"
+   }
+  ],
+  "di_recent": []
+ },
+ "news": [
+  {
+   "title": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
+   "source": "CoinDesk",
+   "link": null,
+   "published": "2026-08-07T05:45:21+00:00"
+  },
+  {
+   "title": "Japan FSA asks crypto exchanges to impose withdrawal delays to fight scams",
+   "source": "Cointelegraph",
+   "link": null,
+   "published": "2026-08-07T05:24:38+00:00"
+  },
+  {
+   "title": "Proposed CLARITY ethics deal could save Trump millions in taxes: Bloomberg",
+   "source": "Cointelegraph",
+   "link": null,
+   "published": "2026-08-07T05:04:22+00:00"
+  },
+  {
+   "title": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
+   "source": "CoinDesk",
+   "link": null,
+   "published": "2026-08-07T04:50:44+00:00"
+  },
+  {
+   "title": "A bitcoin pattern taking shape right now could send prices soaring to $76,000",
+   "source": "CoinDesk",
+   "link": null,
+   "published": "2026-08-07T04:28:17+00:00"
+  },
+  {
+   "title": "XRP leads majors losses as Clarity Act vote slips to September",
+   "source": "CoinDesk",
+   "link": null,
+   "published": "2026-08-07T04:17:01+00:00"
+  },
+  {
+   "title": "Bitget explores licensed crypto presence in Bhutan",
+   "source": "Cointelegraph",
+   "link": null,
+   "published": "2026-08-07T03:22:26+00:00"
+  },
+  {
+   "title": "US Senate pushes CLARITY Act vote to September",
+   "source": "Cointelegraph",
+   "link": null,
+   "published": "2026-08-07T02:49:53+00:00"
+  },
+  {
+   "title": "MARA swings to Q2 loss as Bitcoin’s slump masks higher output",
+   "source": "Cointelegraph",
+   "link": null,
+   "published": "2026-08-07T02:17:07+00:00"
+  },
+  {
+   "title": "Senate won't vote on crypto Clarity Act before its summer break",
+   "source": "CoinDesk",
+   "link": null,
+   "published": "2026-08-07T02:14:43+00:00"
+  },
+  {
+   "title": "SEC Bought a Billion Airline Records to Track Travelers—Likely Without a Warrant",
+   "source": "Decrypt",
+   "link": null,
+   "published": "2026-08-06T21:36:03+00:00"
+  },
+  {
+   "title": "Tokyo Tells Trump to Stop Meme-ing Mario",
+   "source": "Decrypt",
+   "link": null,
+   "published": "2026-08-06T21:01:03+00:00"
+  }
+ ]
+}
